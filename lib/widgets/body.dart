@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/constant/image_string.dart';
 import 'package:portfolio/utils/button.dart';
+import 'package:url_launcher/link.dart';
 
 import '../utils/social_media.dart';
 
@@ -13,7 +14,7 @@ class Body extends StatelessWidget {
     return Row(
       children: [
         SizedBox(
-          width: 500,
+          width: 400,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -22,6 +23,9 @@ class Body extends StatelessWidget {
               ),
               Text(
                 "Welcome",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               RichText(
                 text: TextSpan(
@@ -30,13 +34,17 @@ class Body extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                   children: [
-                    TextSpan(text: "I have "),
+                    TextSpan(text: "I am "),
                     TextSpan(
-                        text: "Creative Design ",
+                        text: "Edilberto ",
                         style: TextStyle(
                           color: Colors.green,
                         )),
-                    TextSpan(text: "Experience"),
+                    TextSpan(
+                        text: "Freelance Web and Mobile Developer",
+                        style: TextStyle(
+                          fontSize: 20,
+                        )),
                   ],
                 ),
               ),
@@ -44,7 +52,11 @@ class Body extends StatelessWidget {
                 height: 30,
               ),
               Text(
-                "I'm Edilberto, a creative Product Designer. I've been helping business to solve their problems with my design for 2 years.",
+                "Everyday is a new learning in a world of programming. Let me teach you my own way.",
+                style: TextStyle(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 16,
+                ),
               ),
               SizedBox(
                 height: 30,
@@ -58,18 +70,23 @@ class Body extends StatelessWidget {
                   SizedBox(
                     width: 30,
                   ),
-                  TextButton.icon(
-                    onPressed: () {},
-                    icon: Text(
-                      "View Portfolio",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w900,
+                  Link(
+                    target: LinkTarget.blank,
+                    uri: Uri.parse(
+                        "https://drive.google.com/file/d/1AyP8SKvSbBvjL_rKPN2z2yhfI-xCV4Yt/view?usp=sharing"),
+                    builder: (context, followLink) => TextButton.icon(
+                      onPressed: followLink,
+                      icon: Text(
+                        "View Portfolio",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.w900,
+                        ),
                       ),
-                    ),
-                    label: Icon(
-                      Icons.subdirectory_arrow_left_rounded,
-                      color: Colors.black,
+                      label: Icon(
+                        Icons.subdirectory_arrow_left_rounded,
+                        color: Colors.black,
+                      ),
                     ),
                   ),
                 ],
@@ -149,18 +166,21 @@ class Body extends StatelessWidget {
             ),
             SocialMedia(
               icon: FontAwesomeIcons.facebook,
+              uri: "https://www.facebook.com/choi.pajunar123",
             ),
             SizedBox(
               height: 40,
             ),
             SocialMedia(
-              icon: FontAwesomeIcons.google,
+              icon: FontAwesomeIcons.twitter,
+              uri: "https://twitter.com/choi_nav",
             ),
             SizedBox(
               height: 40,
             ),
             SocialMedia(
               icon: FontAwesomeIcons.github,
+              uri: "https://github.com/eunhachingu",
             ),
           ],
         ),

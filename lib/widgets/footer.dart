@@ -25,24 +25,28 @@ class Footer extends StatelessWidget {
               children: [
                 SocialMedia(
                   icon: FontAwesomeIcons.facebook,
+                  uri: "https://www.facebook.com/choi.pajunar123",
                 ),
                 SizedBox(
                   width: 10,
                 ),
                 SocialMedia(
                   icon: FontAwesomeIcons.twitter,
+                  uri: "https://twitter.com/choi_nav",
                 ),
                 SizedBox(
                   width: 10,
                 ),
                 SocialMedia(
                   icon: FontAwesomeIcons.linkedin,
+                  uri: "https://www.linkedin.com/feed/",
                 ),
                 SizedBox(
                   width: 10,
                 ),
                 SocialMedia(
                   icon: FontAwesomeIcons.github,
+                  uri: "https://github.com/eunhachingu",
                 ),
               ],
             ),
