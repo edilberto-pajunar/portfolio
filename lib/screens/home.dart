@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/widgets/footer.dart';
 import 'package:portfolio/widgets/skills.dart';
 
-import '../../widgets/body.dart';
-import '../../widgets/contact.dart';
-import '../../widgets/nav_bar.dart';
-import '../../widgets/portfolio.dart';
+import '../widgets/body.dart';
+import '../widgets/contact.dart';
+import '../widgets/nav_bar.dart';
+import '../widgets/portfolio.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -22,7 +22,7 @@ class Home extends StatelessWidget {
                 children: [
                   NavBar(),
                   SizedBox(height: 30),
-                  Body(),
+                  // Body(),
                 ],
               ),
               SizedBox(
