@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio/constant/color.dart';
 import 'package:portfolio/constant/text.dart';
 import 'package:portfolio/utils/button.dart';
 
@@ -26,7 +27,7 @@ class Skills extends StatelessWidget {
                   Text(
                     "My Skills",
                     style: TextStyle(
-                      color: Colors.green,
+                      color: tSecondaryColor,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -41,7 +42,7 @@ class Skills extends StatelessWidget {
                         TextSpan(
                           text: "Project?",
                           style: TextStyle(
-                            color: Colors.green,
+                            color: tSecondaryColor,
                           ),
                         ),
                       ],
@@ -154,7 +155,7 @@ class ToolsSet extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8.0),
           border: Border.all(
-            color: Colors.greenAccent,
+            color: tSecondaryColor,
             width: 2,
           ),
         ),

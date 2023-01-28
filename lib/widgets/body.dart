@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio/constant/color.dart';
 import 'package:portfolio/constant/image_string.dart';
 import 'package:portfolio/utils/button.dart';
 import 'package:url_launcher/link.dart';
@@ -38,7 +39,7 @@ class Body extends StatelessWidget {
                     TextSpan(
                         text: "Edilberto ",
                         style: TextStyle(
-                          color: Colors.green,
+                          color: tSecondaryColor,
                         )),
                     TextSpan(
                         text: "Freelance Web and Mobile Developer",
@@ -110,7 +111,7 @@ class Body extends StatelessWidget {
                   child: Container(
                     height: 300,
                     width: 300,
-                    color: Colors.green,
+                    color: tPrimaryColor,
                   ),
                 ),
                 Positioned(
@@ -149,7 +150,7 @@ class Body extends StatelessWidget {
               child: Text(
                 "Follow me on:",
                 style: TextStyle(
-                  color: Colors.green,
+                  color: tSecondaryColor,
                 ),
               ),
             ),
@@ -159,7 +160,7 @@ class Body extends StatelessWidget {
             Container(
               width: 1,
               height: 50,
-              color: Colors.green,
+              color: tSecondaryColor,
             ),
             SizedBox(
               height: 50,

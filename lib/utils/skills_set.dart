@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constant/color.dart';
 
 class SkillsSet extends StatelessWidget {
   final IconData icon;
@@ -17,18 +18,18 @@ class SkillsSet extends StatelessWidget {
       height: 250,
       width: 250,
       decoration: BoxDecoration(
-        color: Colors.green.withOpacity(0.3),
+        color: tPrimaryColor,
         borderRadius: BorderRadius.circular(15),
         boxShadow: [
           BoxShadow(
-            color: Colors.greenAccent.shade400.withOpacity(0.3),
+            color: Color(0xFF00BBFE),
             blurRadius: 2,
             offset: Offset(0, 10),
           ),
         ],
         border: Border.all(
           width: 2,
-          color: Colors.green,
+          color: Color(0xFF00BBFE),
         ),
       ),
       child: Column(
@@ -45,7 +46,7 @@ class SkillsSet extends StatelessWidget {
           Text(
             title,
             style: TextStyle(
-              color: Colors.black,
+              color: Colors.white,
               fontWeight: FontWeight.bold,
               fontSize: 24,
             ),
@@ -56,7 +57,7 @@ class SkillsSet extends StatelessWidget {
           Text(
             subtitle,
             style: TextStyle(
-              color: Colors.grey,
+              color: Colors.white70,
               fontWeight: FontWeight.w400,
             ),
           ),

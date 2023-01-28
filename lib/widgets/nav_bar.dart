@@ -1,6 +1,7 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:portfolio/constant/color.dart';
 import 'package:portfolio/constant/image_string.dart';
 import 'package:url_launcher/link.dart';
 
@@ -13,7 +14,18 @@ class NavBar extends StatelessWidget {
       height: 56,
       child: Row(
         children: [
-          Image.asset(tLogo),
+          Container(
+            height: 100,
+            width: 200,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(
+                  tLogo,
+                ),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
           Spacer(),
           Expanded(
             child: Row(
@@ -68,7 +80,7 @@ class NavBar extends StatelessWidget {
                 backgroundColor: Colors.white,
                 shape: RoundedRectangleBorder(
                   side: BorderSide(
-                    color: Colors.green,
+                    color: tPrimaryColor,
                   ),
                   borderRadius: BorderRadius.circular(8.0),
                 ),

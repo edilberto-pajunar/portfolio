@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constant/color.dart';
 import 'package:portfolio/utils/button.dart';
 import 'package:portfolio/utils/contact_card.dart';
 import 'package:portfolio/utils/input_form.dart';
@@ -34,7 +35,9 @@ class _ContactState extends State<Contact> {
         children: [
           Text(
             "Contact",
-            style: TextStyle(color: Colors.green),
+            style: TextStyle(
+              color: tSecondaryColor,
+            ),
           ),
           SizedBox(
             height: 30,
@@ -49,7 +52,9 @@ class _ContactState extends State<Contact> {
                   TextSpan(text: "Let's Discuss Your "),
                   TextSpan(
                     text: "Project",
-                    style: TextStyle(color: Colors.green),
+                    style: TextStyle(
+                      color: tSecondaryColor,
+                    ),
                   ),
                 ]),
           ),

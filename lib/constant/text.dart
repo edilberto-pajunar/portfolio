@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constant/color.dart';
 
 const tHeader = TextStyle(
-  color: Colors.green,
+  color: tPrimaryColor,
   fontSize: 16,
   fontWeight: FontWeight.bold,
 );

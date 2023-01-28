@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constant/color.dart';
 import 'package:portfolio/utils/button.dart';
 
 class Portfolio extends StatelessWidget {
@@ -19,7 +20,7 @@ class Portfolio extends StatelessWidget {
               Text(
                 "Portfolio",
                 style: TextStyle(
-                  color: Colors.green,
+                  color: tSecondaryColor,
                 ),
               ),
               RichText(
@@ -33,7 +34,7 @@ class Portfolio extends StatelessWidget {
                     TextSpan(
                       text: "Projects",
                       style: TextStyle(
-                        color: Colors.green,
+                        color: tSecondaryColor,
                       ),
                     ),
                   ],

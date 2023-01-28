@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio/constant/color.dart';
 import 'package:url_launcher/link.dart';
 
 class SocialMedia extends StatelessWidget {
@@ -29,7 +30,7 @@ class SocialMedia extends StatelessWidget {
             ),
           ),
           decoration: BoxDecoration(
-            color: Colors.green,
+            color: tPrimaryColor,
             borderRadius: BorderRadius.circular(8),
           ),
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constant/color.dart';
 
 class ContactCard extends StatelessWidget {
   final String title;
@@ -26,7 +27,7 @@ class ContactCard extends StatelessWidget {
           leading: Container(
             padding: EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: Colors.green,
+              color: tPrimaryColor,
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(

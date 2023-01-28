@@ -22,7 +22,7 @@ class Home extends StatelessWidget {
                 children: [
                   NavBar(),
                   SizedBox(height: 30),
-                  // Body(),
+                  Body(),
                 ],
               ),
               SizedBox(
