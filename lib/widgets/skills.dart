@@ -70,7 +70,7 @@ class Skills extends StatelessWidget {
                 SkillsSet(
                   title: "Web Developer",
                   subtitle:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                      "Building web is my main objective. To let you have the platform that you want.",
                   icon: Icons.web,
                 ),
                 SizedBox(
@@ -79,16 +79,16 @@ class Skills extends StatelessWidget {
                 SkillsSet(
                   title: "Mobile Developer",
                   subtitle:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                      "An application is very-handly tool and I will let you access things through your mobile application.",
                   icon: Icons.mobile_friendly,
                 ),
                 SizedBox(
                   width: 10,
                 ),
                 SkillsSet(
-                  title: "UI/UX",
+                  title: "Landing Page",
                   subtitle:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                      "A good design in front can lead you to attract different clients and I will develop it.",
                   icon: Icons.design_services,
                 ),
               ],

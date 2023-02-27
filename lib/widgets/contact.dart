@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/constant/color.dart';
 import 'package:portfolio/utils/button.dart';
 import 'package:portfolio/utils/contact_card.dart';
@@ -16,7 +17,7 @@ class _ContactState extends State<Contact> {
   Widget build(BuildContext context) {
     final TextEditingController _nameController = TextEditingController();
     final TextEditingController _emailController = TextEditingController();
-    final TextEditingController _phoneController = TextEditingController();
+    final TextEditingController _subjectController = TextEditingController();
     final TextEditingController _budgetController = TextEditingController();
     final TextEditingController _messageController = TextEditingController();
 
@@ -25,10 +26,12 @@ class _ContactState extends State<Contact> {
       super.dispose();
       _nameController.dispose();
       _emailController.dispose();
-      _phoneController.dispose();
+      _subjectController.dispose();
       _budgetController.dispose();
       _messageController.dispose();
     }
+
+    final Size size = MediaQuery.of(context).size;
 
     return Center(
       child: Column(
@@ -74,21 +77,21 @@ class _ContactState extends State<Contact> {
                   ContactCard(
                       title: "Call",
                       icon: Icons.call,
-                      subtitle: "_639182923159"),
+                      subtitle: "+639182923159"),
                   SizedBox(
                     height: 50,
                   ),
                   ContactCard(
-                      title: "Call",
-                      icon: Icons.call,
-                      subtitle: "_639182923159"),
+                      title: "Gmail",
+                      icon: FontAwesomeIcons.google,
+                      subtitle: "pajunar0@gmail.com"),
                   SizedBox(
                     height: 50,
                   ),
                   ContactCard(
-                      title: "Call",
-                      icon: Icons.call,
-                      subtitle: "_639182923159"),
+                      title: "Discord",
+                      icon: FontAwesomeIcons.discord,
+                      subtitle: "choi#3368"),
                 ],
               ),
               SizedBox(
@@ -101,17 +104,18 @@ class _ContactState extends State<Contact> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         InputForm(
                           text: "Name",
                           controller: _nameController,
                         ),
-                        SizedBox(
-                          width: 20,
-                        ),
+                        // SizedBox(
+                        //   width: 20,
+                        // ),
                         InputForm(
-                          text: "Name",
-                          controller: _nameController,
+                          text: "Email",
+                          controller: _emailController,
                         ),
                       ],
                     ),
@@ -119,17 +123,18 @@ class _ContactState extends State<Contact> {
                       height: 20,
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         InputForm(
-                          text: "Name",
-                          controller: _nameController,
+                          text: "Subject",
+                          controller: _subjectController,
                         ),
-                        SizedBox(
-                          width: 20,
-                        ),
+                        // SizedBox(
+                        //   width: 20,
+                        // ),
                         InputForm(
-                          text: "Name",
-                          controller: _nameController,
+                          text: "Subject",
+                          controller: _budgetController,
                         ),
                       ],
                     ),
@@ -139,8 +144,8 @@ class _ContactState extends State<Contact> {
                     InputForm(
                       text: "Message",
                       controller: _messageController,
-                      width: 880,
                       maxLines: 7,
+                      width: double.infinity,
                     ),
                     SizedBox(
                       height: 20,

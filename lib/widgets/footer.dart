@@ -20,7 +20,7 @@ class Footer extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text("@ 2023. All Rights Reserved"),
-            Text("Designed by Tanvir Ahmed"),
+            Text("Designed by and Inspired in dribbble.com"),
             Row(
               children: [
                 SocialMedia(

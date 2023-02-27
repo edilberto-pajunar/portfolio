@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/constant/color.dart';
 
 class ContactCard extends StatelessWidget {
   final String title;
-  final IconData icon;
+  final  icon;
   final String subtitle;
   const ContactCard(
       {super.key,
@@ -14,7 +15,7 @@ class ContactCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: tSecondaryColor.withOpacity(0.1),
       height: 100,
       width: 300,
       child: Center(
@@ -30,7 +31,7 @@ class ContactCard extends StatelessWidget {
               color: tPrimaryColor,
               borderRadius: BorderRadius.circular(8),
             ),
-            child: Icon(
+            child: FaIcon(
               icon,
               color: Colors.white,
             ),
